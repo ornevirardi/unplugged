@@ -89,12 +89,24 @@ textarea {
 
   /* Base header - Footer Styles  */
 
+  html{
+    font-size: 16px;
+  }
+body{
+  color: #e2e3ed;
+  font-size: 1em;
+}
   header,
   footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #202322;
+  }
+
+  .content-wrapper{
+    width: 90%;
   }
 
   /* Header styles */
@@ -108,7 +120,12 @@ textarea {
   }
 
   header figure{
+    display: flex;
+    justify-content: center;
+  }
 
+  header figure a img{
+    width: 90%;
   }
 
   .header-divider{
@@ -116,7 +133,8 @@ textarea {
   }
 
   header nav{
-    
+    width: 60%;
+    margin: auto;
   }
 
   header nav ul {
@@ -124,9 +142,15 @@ textarea {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    padding: 0;
   }
   a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #e2e3ed;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   /* Mobile styles - Homepage */
@@ -137,14 +161,35 @@ textarea {
     align-items: center; 
     flex-direction: column;
   }
-  .hero-area{
 
+  .hero-container{
+    position: relative;
+  }
+
+  .hero-container h1{
+    
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #e2e3ed;
+
+  }
+
+  .hero-area{
+    width: 100%;
+  }
+
+  .hero-image img{
+    width: 100%;
+    height: 500px;
+    
   }
 
   aside{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #527158;
   }
 
   /* Footer*/
@@ -152,6 +197,13 @@ textarea {
   footer{
     
   }
+
+  
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
