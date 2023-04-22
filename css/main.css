@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+ /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -87,6 +87,71 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /* Base header - Footer Styles  */
+
+  header,
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  /* Header styles */
+  
+  header{
+
+  }
+
+  header .content-wrapper{
+
+  }
+
+  header figure{
+
+  }
+
+  .header-divider{
+
+  }
+
+  header nav{
+    
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  /* Mobile styles - Homepage */
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+  }
+  .hero-area{
+
+  }
+
+  aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer*/
+
+  footer{
+    
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
