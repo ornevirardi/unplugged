@@ -214,6 +214,12 @@ aside {
   margin: 20px 0;
 }
 
+/* Adding media query for tablets */
+
+@media only screen and (min-width: 768px){
+  
+}
+
 
 /* ==========================================================================
    Helper classes
