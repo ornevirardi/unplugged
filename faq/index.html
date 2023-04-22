@@ -1,74 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <header>
-    <div>
-      <a href="#"><img src="" alt="unplugged logo"></a>
-    </div>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="faq/index.html" rel="noopener">FAQ</a>;</li>
-          <li><a href="about/index.html" rel="noopener">About</a>;</li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section>
-
-    </section>
-    <aside>
-
-    </aside>
-  </main> <!---end of main wrapper--->
-  <footer>
-    <div>
-      <div>
-        <div>
-          <div>
-            <p><a href="https://www.facebook.com/yoursite" target="_blank" rel="noopener"></a></p>
-            <!-- other social links here -->
-          </div>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <!-- Herader Area:m Logo and Navigation bar -->
+    <header>
+      <div class="content-wrapper">
+        <figure>
+          <a href="#"
+            ><img src="img/unpluggedlogo.png" alt="unplugged logo"
+          /></a>
+        </figure>
+        <div class="header-divider">
+          <nav>
+            <ul>
+              <li><a href="faq/index.html" target="_blank">FAQ</a></li>
+              <li><a href="about/index.html" target="_blank">About</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Add your site or application content here -->
-  
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
+    </header>
+    <!-- Main area: Headline, Newsletter signup, unplugged info, previous retreats -->
+    <main>
+      <section class="hero-area">
+        <div class="content-wrapper">
+          <h1>Retreat from the dest, return refreshed.</h1>
+        </div>
+      </section>
+      <aside>
+        <div class="content-wrapper">
+          <div class="form-description">
+            <h3>Want to join the next retreat?</h3>
+            <p>
+              Find out when we are holding our next retreat and how your company
+              or team can sign up!
+            </p>
+          </div>
+          <div class="form">
+            <h3>Find out more</h3>
+            <!-- Here goes the email -->
+          </div>
+        </div>
+      </aside>
+    </main>
+     <!-- Footer -->
+    <footer>
+      <div class="content-wrapper">
+        <div class="contact-info">
+          <address>
+            <h4>Contact</h4>
+            <p>555-555-5555<br />hello@unplugged.com</p>
+          </address>
+        </div>
+        <div class="social-media">
+          <p>
+            <a href="https://www.facebook.com/yoursite" target="_blank"
+              >Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.twitter.com/yoursite" target="_blank"></a>TW
+          </p>
+          <p>
+            <a href="https://www.instagram.com/yoursite" target="_blank"></a>IG
+          </p>
+        </div>
+        <div class="copyright">
+          <h4>Copyright 202x | Unplugged</h4>
+        </div>
+      </div>
+    </footer>
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
