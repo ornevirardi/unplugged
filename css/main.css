@@ -86,6 +86,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+    /* General Styles */
+    html {
+      font-size: 16px;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+    }
+    ul, ol {
+    }
+    a {
+      color: #e2e3ed;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 2.250em;
+      line-height: 43px;
+      font-weight: 500;
+    }
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.875em;
+      font-weight: 500;
+    }
+    h3, h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125em;
+      font-weight: 500;
+    }
+    p {
+      font-size: 0.875em;
+      line-height: 18px;
+    }
+    img {
+    }
+    figure {
+    }
+    address {
+    }
+    .content-wrapper {
+    }
 
    /*MobileP Header & Footer styles - Hero area, Aside, Features & Reviews*/
    
@@ -124,6 +165,12 @@ textarea {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    list-style: none;
+  }
+
+  header nav ul li a{
+    font-size: 1.125em;
+    font-weight: bold;
   }
 
   footer {
@@ -174,6 +221,11 @@ aside {
   flex-flow: row wrap;
 }
 
+.signup-form input{
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
 .features {
   display: flex;
   justify-content: center;
@@ -207,6 +259,7 @@ aside {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -251,16 +304,33 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
 
+.faq-content h4{
+  line-height: 24px;
+}
 
 /* Adding media query for tablets */
 
 @media only screen and (min-width: 768px){
+
+  h1 {
+    font-size: 3.000em;
+    line-height: 48px;
+  }
+  h2{
+    font-size: 2.250em;
+    line-height: 48px;
+  }
+  h3{
+    font-size: 1.500em;
+    line-height: 30px;
+  }
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -328,6 +398,10 @@ aside {
       width: 65%;
       margin: 100px 0;
     }
+
+    footer p{
+      line-height: 18px;
+    }
   
     .footer-content {
       display: flex;
@@ -337,6 +411,10 @@ aside {
   
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer .contact h4{
+      font-size: 1.500em;
     }
   
     footer .copyright {
@@ -375,6 +453,11 @@ aside {
     .faq h2 {
       width: 100%;
     }
+    
+    .faq h4, p{
+      font-size: 0.875em;
+      line-height: 15.75px;
+    }
 }
 
 /* Adding media query for Desktop */
@@ -386,8 +469,18 @@ aside {
   }
   .hero-area h1 {
     width: 60%;
+    font-size: 3.750em;
   }
-
+  h2{
+    font-family: 2.250em;
+  }
+  h3, h4{
+    font-size: 1.875em;
+  }
+  p{
+    font-size: 1.125em;
+    line-height: 24px;
+  }
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -405,6 +498,9 @@ aside {
     width: 42%;
   }
   /*About*/
+  .mission h2{
+    font-size: 3.000em;
+  }
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
@@ -412,8 +508,12 @@ aside {
   /*Faq*/
   .faq h2 {
     width: 100%;
+    font-size: 3.000em;
   }
-
+  .faq h4, p{
+    font-size: 1.125em;
+    line-height: 18px;
+  }
 }
 
 
