@@ -93,15 +93,15 @@ textarea {
     body {
       font-family: 'Open Sans', sans-serif;
       font-size: 1em;
+      color: #e2e3ed;
+      text-align: left;
     }
     ul, ol {
+      list-style-type: none;
     }
     a {
       color: #e2e3ed;
       text-decoration: none;
-    }
-    h1{
-
     }
     h2 {
       font-family: 'Poppins', sans-serif;
@@ -118,12 +118,13 @@ textarea {
       line-height: 18px;
     }
     img {
+      width: 100%;
     }
     figure {
+      margin: 0;
     }
     address {
-    }
-    .content-wrapper {
+      font-style: normal;
     }
 
    /*MobileP Header & Footer styles - Hero area, Aside, Features & Reviews*/
@@ -138,6 +139,14 @@ textarea {
     background: #202322;
   }
   
+  #logo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
   header .content-wrapper {
     display: flex;
     justify-content: center;
@@ -150,6 +159,7 @@ textarea {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
+    background: #3a3a3a;
   }
   
   header nav {
@@ -164,7 +174,6 @@ textarea {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    list-style: none;
   }
 
   header nav ul li a{
@@ -173,9 +182,9 @@ textarea {
   }
 
   footer {
+    text-align: center;
     flex-direction: column;
     background: #202322;
-    color: #e2e3ed;
   }
   
   footer p {
@@ -216,16 +225,16 @@ textarea {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.hero-image{
-  position: absolute;
+  background: url('/img/unplugged-retreat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1{
-  position: relative;
-  color: #e2e3ed;
-  font-size: 2.250em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
   line-height: 43px;
   font-weight: 500;
 
@@ -237,103 +246,6 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background: #527158;
-  color: #e2e3ed;
-}
-
-.signup-form input{
-  font-size: 1.125em;
-  font-weight: 500;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-.features h2 {
-  margin-bottom: 60px;
-}
-
-.features article {
-  width: 63%;
-  margin: 30px 0;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features p {
-  margin: 0;
-}
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background: #2a423a;
-  color: #e2e3ed;
-}
-
-.reviews h2 {
-  margin-bottom: 40px;
-  line-height: 30px;
-}
-
-.reviews h3 {
-  width: 55%;
-  margin: 20px 0;
-}
-
-/*About*/
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.contact-content p {
-  margin: 0;
-}
-
-/*FAQ*/
-.faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.faq .content-wrapper {
-  margin: 50px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.faq h2 {
-  margin-bottom: 40px;
-  line-height: 30px;
-}
-
-.faq-content {
-  margin-bottom: 50px;
-}
-
-.faq-content h4{
-  line-height: 24px;
 }
 
 aside .form {
@@ -362,13 +274,110 @@ input[type=button] {
   text-transform: uppercase;
 }
 
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url('/img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features p {
+  margin: 0;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: #2a423a;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+/*About*/
+.mission {
+  background: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  background: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content p {
+  margin: 0;
+}
+
+/*FAQ*/
+.faq {
+  background: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4{
+  line-height: 24px;
+}
+
+
 /* Adding media query for tablets */
 
 @media only screen and (min-width: 768px){
-
-  h1 {
-    font-size: 3.000em;
-    line-height: 48px;
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
   }
   h2{
     font-size: 2.250em;
@@ -378,20 +387,17 @@ input[type=button] {
     font-size: 1.500em;
     line-height: 30px;
   }
-  .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
-  }
   header {
     justify-content: space-around;
     padding: 33px 0;
   }
-
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
   }
-
+  #logo{
+    width: 30%;
+  }
   header nav {
     width: 20%;
   }
@@ -403,11 +409,14 @@ input[type=button] {
   .header-divider {
     display: none;
   }
-
-  aside{
-    background: #527158;
+  .hero-area{
+    min-height: 600px;
   }
-
+  .hero-area h1{
+    font-size: 3em;
+    line-height: 48px;
+    margin: 0;
+  }
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -427,6 +436,9 @@ input[type=button] {
       width: 40%;
       margin: 0;
     }
+    .features h2{
+      margin-bottom: 20px;
+    }
     .features article {
       display: flex;
       justify-content: center;
@@ -442,23 +454,29 @@ input[type=button] {
       display: flex;
       justify-content: space-between;
     }
-  
-    .reviews article div {
+    .reviews h2{
+      width: 85%;
+    }
+    .reviews article figure, .reviews article div {
       width: 49%;
+    }
+    .reviews h3{
+      width: 75%;
+      margin: 0;
     }
     footer .content-wrapper {
       width: 65%;
       margin: 100px 0;
     }
-
     footer p{
       line-height: 18px;
     }
   
-    .footer-content {
+    footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
     }
   
     footer .contact {
@@ -467,6 +485,7 @@ input[type=button] {
 
     footer .contact h4{
       font-size: 1.500em;
+      margin-bottom: 40px;
     }
   
     footer .copyright {
@@ -493,6 +512,10 @@ input[type=button] {
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    .contact-content h4{
+      font-size: 1.5em;
+    }
     /*FAQ*/
     .faq .content-wrapper {
       justify-content: space-between;
@@ -506,7 +529,7 @@ input[type=button] {
       width: 100%;
     }
     
-    .faq h4, p{
+    .faq h4, .faq p{
       font-size: 0.875em;
       line-height: 15.75px;
     }
@@ -515,7 +538,9 @@ input[type=button] {
 /* Adding media query for Desktop */
 
 @media only screen and (min-width:1200px) {
-
+  header{
+    padding: 15px 0;
+  }
   .content-wrapper {
     max-width: 960px;
   }
@@ -533,17 +558,20 @@ input[type=button] {
     font-size: 1.125em;
     line-height: 24px;
   }
-
-  aside{
-    background: #527158;
+  .hero-area h1{
+    font-size: 3.75em;
+    width: 80%;
   }
-
+  
   aside .content-wrapper {
     justify-content: space-around;
   }
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+  .form-description p{
+    font-size: 1.125em;
   }
   .features h2 {
     width: 90%;
@@ -554,20 +582,27 @@ input[type=button] {
   .reviews article div {
     width: 42%;
   }
-  /*About*/
-  .mission h2{
-    font-size: 3.000em;
+  .reviews h2{
+    padding-bottom: 50%;
   }
+  footer h4{
+    font-size: 1.875em;
+  }
+  /*About*/
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
+      font-size: 3.000em;
+  }
+  .contact-content h4{
+    font-size: 1.875em;
   }
   /*Faq*/
   .faq h2 {
     width: 100%;
     font-size: 3.000em;
   }
-  .faq h4, p{
+  .faq h4, .faq p{
     font-size: 1.125em;
     line-height: 18px;
   }
