@@ -101,9 +101,7 @@ textarea {
       text-decoration: none;
     }
     h1{
-      font-size: 2.250em;
-      line-height: 43px;
-      font-weight: 500;
+
     }
     h2 {
       font-family: 'Poppins', sans-serif;
@@ -137,6 +135,7 @@ textarea {
 
   header {
     padding: 15px 0;
+    background: #202322;
   }
   
   header .content-wrapper {
@@ -175,6 +174,8 @@ textarea {
 
   footer {
     flex-direction: column;
+    background: #202322;
+    color: #e2e3ed;
   }
   
   footer p {
@@ -194,6 +195,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
   }
   
   footer .social-icons p {
@@ -204,6 +206,8 @@ textarea {
   
   footer .copyright {
     margin: 20px 0;
+    font-size: 1.500em;
+    text-align: center;
   }
 
 
@@ -214,11 +218,26 @@ textarea {
   flex-flow: row wrap;
 }
 
+.hero-image{
+  position: absolute;
+}
+
+.hero-area h1{
+  position: relative;
+  color: #e2e3ed;
+  font-size: 2.250em;
+  line-height: 43px;
+  font-weight: 500;
+
+}
+
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  color: #e2e3ed;
 }
 
 .signup-form input{
@@ -255,6 +274,8 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
+  color: #e2e3ed;
 }
 
 .reviews h2 {
@@ -315,6 +336,32 @@ aside {
   line-height: 24px;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Adding media query for tablets */
 
 @media only screen and (min-width: 768px){
@@ -356,6 +403,11 @@ aside {
   .header-divider {
     display: none;
   }
+
+  aside{
+    background: #527158;
+  }
+
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -481,6 +533,11 @@ aside {
     font-size: 1.125em;
     line-height: 24px;
   }
+
+  aside{
+    background: #527158;
+  }
+
   aside .content-wrapper {
     justify-content: space-around;
   }
