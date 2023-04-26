@@ -258,7 +258,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("/img/unplugged-retreat.jpg");
+  background: url("../img/unplugged-retreat.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,7 +310,7 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("/img/unplugged-retreat-features.jpg");
+  background: url("../img/unplugged-retreat-features.jpg");
   background-size: cover;
   background-position: center;
 }
